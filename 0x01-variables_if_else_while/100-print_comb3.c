@@ -19,7 +19,7 @@ int main(void)
 				if (n2 < 9 || n1 < 8)
 				{
 					putchar(',');
-					putcha(' ');
+					putchar(' ');
 				}
 			}
 		}
