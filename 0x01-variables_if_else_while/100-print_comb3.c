@@ -14,7 +14,7 @@ int main(void)
 		{
 			if (n1 != n2 && n1 < n2)
 			{
-				if (n2 < 89)
+				if (n2 < 9 || n1 < 8)
 				{
 					putchar(',');
 				}
