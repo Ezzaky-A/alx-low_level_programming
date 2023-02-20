@@ -2,16 +2,12 @@
 /**
  * main - Entry point
  *
- * Description: 'Two_digit seperate by comma'
- *
- * Return: Always 0 (Success)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
-	const char str[];
+	char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	write(2, str, sizeof(str) - 1);
+	write(2, str1, 59);
 	return (1);
 }
