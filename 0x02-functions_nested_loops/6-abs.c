@@ -1,15 +1,19 @@
 #include "main.h"
 /**
  * _abs-print the absolute value of integer
- * @int:checker
+ * @x:checker
  * Return:the absolute value;
  */
-int _abs(int)
+int _abs(int x)
 {
 	int x;
 
-	if (x < 0)
+	if (x >= 0)
 	{
-		x = x * (-1);
+		return (x);
+	}
+	else
+	{
+		return (-x);
 	}
 }
