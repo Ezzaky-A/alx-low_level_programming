@@ -12,24 +12,26 @@ void jack_bauer(void)
 		{
 			if (a <= 9)
 			{
-				printf("0%d", a);
-				printf(":");
-				printf("%d", b);
-				printf("\n");
+				_putchar('0');
+				_putchar(a + '0');
+				_putchar(':');
+				_putchar(b + '0');
+				_putchar('\n');
 			}
 			else if (b <= 9)
 			{
-				printf("%d", a);
-				printf(":");
-				printf("0%d", b);
-				printf("\n");
+				_putchar(a + '0');
+				_putchar(':');
+				_putchar('0');
+				_putchar(b + '0');
+				_putchar('\n');
 			}
 			else
 			{
-				printf("%d", a);
-				printf(":");
-				printf("%d", b);
-				printf("\n");
+				_putchar(a);
+				_putchar(':');
+				_putchar(b);
+				_putchar('\n');
 			}
 		}
 	}
