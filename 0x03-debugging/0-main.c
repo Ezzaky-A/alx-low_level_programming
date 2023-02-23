@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main-call function postitive or negative
+ * main-call function postitive_or_negative
  * Return: return 0
  *
  */
