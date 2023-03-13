@@ -1,21 +1,15 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * _puts-function that prints a string
- * @str: checker
+ * @s: checker
  * Return:  prints a string
  */
-void _puts(char *str)
-{
-	int count = 0;
 
-	while (count >= 0)
-	{
-		if (str[count] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(str[count]);
-		count++;
-	}
+void _puts(char *s)
+{
+    puts(s);
 }
