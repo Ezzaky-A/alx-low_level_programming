@@ -11,5 +11,5 @@
 
 void _puts(char *s)
 {
-    puts(s);
+    _puts(s);
 }
