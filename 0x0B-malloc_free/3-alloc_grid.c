@@ -8,8 +8,8 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, s1, s2;
-	int **po;
+	int i, j, a, b;
+	int **p;
 
 	if (width <= 0 || height <= 0)
 	{
@@ -17,33 +17,31 @@ int **alloc_grid(int width, int height)
 	}
 	else
 	{
-		po = (int **) malloc(height * sizeof(int *));
-		if (!po)
+		p = (int **) malloc(height * sizeof(int *));
+		/* we have to make a malloc per pointer*/
+		if (!p)
 		{
-			free(po);
+			free(p);
 			return (NULL);
 		}
 		for (i = 0; i < height; i++)
 		{
-			po[i] = (int *) malloc(width * sizeof(int *));
-			if (!po[i])
+			p[i] = (int *) malloc(width * sizeof(int));
+			if (!p[i])
 			{
 				for (j = 0; j <= i; j++)
-				{
-					free(po[j]);
-				}
-				free(po);
+					free(p[j]);
+				free(p);
 				return (NULL);
 			}
 		}
-		for (s1 = 0; s1 < height; s1++)
+		for (a = 0; a < height; a++)
 		{
-			for (s2 = 0; s2 < width; s2++)
+			for (b = 0; b < width; b++)
 			{
-				po[s1][s2] = 0;
+				p[a][b] = 0;
 			}
 		}
-		return (po);
+		return (p);
 	}
-
 }
