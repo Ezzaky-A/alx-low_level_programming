@@ -8,4 +8,6 @@ int factorial(int n);
 int factorial(int n);
 int _sqrt_recursion(int n);
 int _sqrt_recursion(int n);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
 #endif
