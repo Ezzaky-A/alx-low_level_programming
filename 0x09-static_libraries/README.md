@@ -1,1 +1,1 @@
-m new project
+my new project
