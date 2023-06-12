@@ -1,1 +1,1 @@
-my new Readme
+my readm in 0x09 static libraries
